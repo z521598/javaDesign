@@ -13,7 +13,6 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
 @Inherited
-@Documented
-public @interface Test {
-    String name();
+public @interface ClassAnnotation {
+    String value();
 }
