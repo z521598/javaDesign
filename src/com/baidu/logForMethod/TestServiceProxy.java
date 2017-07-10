@@ -15,6 +15,7 @@ public class TestServiceProxy implements InvocationHandler {
     public TestServiceProxy(TestService testService) {
         this.testService = testService;
     }
+    private Object object;
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
