@@ -55,6 +55,6 @@ public class Person implements Generator<Person>{
 
     @Override
     public Person next() {
-        return new Person(UUID.randomUUID().toString().substring(0,10),new Random().nextInt(10) > 5 ? "man" : "woman",new Random().nextInt(40));
+        return new Person(UUID.randomUUID().toString().substring(0,10).replace("-",""),new Random().nextInt(10) > 5 ? "man" : "woman",new Random().nextInt(40));
     }
 }
